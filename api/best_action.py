@@ -17,13 +17,11 @@ app.add_middleware(
 )
 
 # Add model directory to Python path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'tmp', 'nTupleNetwork_63041games.pkl'))
 
 from nTupleAgent import nTupleNetwork
 
 # Global agent variable (cached after first load)
 agent = None
-
 
 def load_agent():
     global agent
